@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zBlack"
+    tools:context=".Settings">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/transparent"
+                android:src="@drawable/back_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:fontFamily="@font/poppins"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+                app:layout_constraintStart_toEndOf="@+id/back_btn"
+                app:layout_constraintTop_toTopOf="@+id/back_btn"
+                app:layout_constraintVertical_bias="0.461" />
+
+            <ImageButton
+                android:id="@+id/notify_icon"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/transparent"
+                android:src="@drawable/notify"
+                app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView17"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="468dp"
+                android:layout_height="19dp"
+                android:src="@drawable/line1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:text="Blur Effect"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/blur_switch"
+                android:layout_width="64dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="16dp"
+                android:thumb="@drawable/thumb"
+                app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView18"
+                app:track="@drawable/track" />
+
+            <TextView
+                android:id="@+id/Message_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Message Notification"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/msg_switch"
+                android:layout_width="64dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="16dp"
+                android:thumb="@drawable/thumb"
+                app:layout_constraintBottom_toBottomOf="@+id/Message_notify"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Message_notify"
+                app:track="@drawable/track" />
+
+            <TextView
+                android:id="@+id/call_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Incoming call Notification"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Message_notify" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/call_switch"
+                android:layout_width="64dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="16dp"
+                android:thumb="@drawable/thumb"
+                app:layout_constraintBottom_toBottomOf="@+id/call_notify"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/call_notify"
+                app:track="@drawable/track" />
+
+            <TextView
+                android:id="@+id/online_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Friend online Notification"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/call_notify" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/online_switch"
+                android:layout_width="64dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="16dp"
+                android:thumb="@drawable/thumb"
+                app:layout_constraintBottom_toBottomOf="@+id/online_notify"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/online_notify"
+                app:track="@drawable/track" />
+
+            <TextView
+                android:id="@+id/like_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Notification of Like"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/online_notify" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/like_switch"
+                android:layout_width="64dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="16dp"
+                android:thumb="@drawable/thumb"
+                app:layout_constraintBottom_toBottomOf="@+id/like_notify"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/like_notify"
+                app:track="@drawable/track" />
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="468dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/line1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.456"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/like_notify" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/block_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/transparent"
+                android:text="Block Accounts"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="468dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/line1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/block_acc" />
+
+            <TextView
+                android:id="@+id/help_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="@font/poppins"
+                android:text="Help and Feedback"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+            <TextView
+                android:id="@+id/term_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="@font/poppins"
+                android:text="Terms of Service"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/help_feed" />
+
+            <TextView
+                android:id="@+id/privacy_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="@font/poppins"
+                android:text="Privacy Policy"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/term_service" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="@font/poppins"
+                android:text="Versions"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/privacy_policy" />
+
+            <TextView
+                android:id="@+id/version_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="3.6.12"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/version"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/version"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="448dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/retangle_505"
+                app:layout_constraintEnd_toEndOf="@+id/version"
+                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintStart_toStartOf="@+id/version"
+                app:layout_constraintTop_toBottomOf="@+id/version" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Log Out"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/appCompatImageView3"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView3"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:src="@drawable/black_half_border"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toStartOf="@+id/imageView8" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_margin="7dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView3"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView3"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView3">
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="50dp"
+                    android:src="@drawable/unselect_icon" />
+
+                <ImageView
+                    android:id="@+id/history"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="50dp"
+                    android:src="@drawable/history" />
+
+                <ImageView
+                    android:id="@+id/friend"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="50dp"
+                    android:src="@drawable/friends" />
+
+                <ImageView
+                    android:id="@+id/account"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/selected_account" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

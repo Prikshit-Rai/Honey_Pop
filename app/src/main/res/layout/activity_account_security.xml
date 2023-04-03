@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zBlack"
+    tools:context=".AccountSecurity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/transparent"
+                android:src="@drawable/back_arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:fontFamily="@font/poppins"
+                android:text="Account Security"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+                app:layout_constraintStart_toEndOf="@+id/back_btn"
+                app:layout_constraintTop_toTopOf="@+id/back_btn"
+                app:layout_constraintVertical_bias="0.461" />
+
+            <ImageView
+                android:id="@+id/just_img"
+                android:layout_width="29dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/just_another_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/back_btn" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Email address"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/just_img"
+                app:layout_constraintStart_toEndOf="@+id/just_img"
+                app:layout_constraintTop_toTopOf="@+id/just_img"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/info"
+                app:layout_constraintBottom_toBottomOf="@+id/email"
+                app:layout_constraintStart_toEndOf="@+id/email"
+                app:layout_constraintTop_toTopOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/info_email"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins"
+                android:text="For security reasons, please link your account to an email address or phone number as soon as possible."
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/email"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/email"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/link_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/poppins"
+                android:text="Link now >"
+                android:textColor="@color/saffron"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:background="@drawable/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/info_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/info_email"
+                app:layout_constraintVertical_bias="0.265" />
+
+            <ImageView
+                android:id="@+id/just_img2"
+                android:layout_width="29dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="244dp"
+                android:src="@drawable/just_another_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/back_btn" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Phone number"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/just_img2"
+                app:layout_constraintStart_toEndOf="@+id/just_img2"
+                app:layout_constraintTop_toTopOf="@+id/just_img2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/info"
+                app:layout_constraintBottom_toBottomOf="@+id/phone"
+                app:layout_constraintStart_toEndOf="@+id/phone"
+                app:layout_constraintTop_toTopOf="@+id/phone" />
+
+            <TextView
+                android:id="@+id/info_phone"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="150dp"
+                android:fontFamily="@font/poppins"
+                android:text="For security reasons, please link your account to an email address or phone number as soon as possible."
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/phone"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/phone"
+                app:layout_constraintTop_toBottomOf="@+id/phone"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/link_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/poppins"
+                android:text="Link now >"
+                android:textColor="@color/saffron"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:background="@drawable/transparent"
+                app:layout_constraintBottom_toBottomOf="@+id/info_phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/info_phone"
+                app:layout_constraintVertical_bias="0.265" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
